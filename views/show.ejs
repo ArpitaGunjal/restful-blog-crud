@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog in Detail</title>
+    <link rel="stylesheet" href="/show.css">
+</head>
+<body>
+
+    <div class="detail-container">
+
+        <h2>Here is your blog in Detail</h2>
+
+        <p class="blog-id">Blog ID: <%= blog.id %></p>
+
+        <div class="blog-card">
+            <h3><%= blog.Writer_name %></h3>
+            <h4><%= blog.content %></h4>
+        </div>
+
+        <a href="/blogs" class="back-btn">← Back to Blogs</a>
+
+    </div>
+
+</body>
+</html>

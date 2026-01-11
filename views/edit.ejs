@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Blog</title>
+    <link rel="stylesheet" href="/edit.css">
+</head>
+<body>
+
+    <div class="edit-container">
+        <h2>Edit Your Blog</h2>
+
+        <p class="edit-info">Blog ID: <%= blog.id %></p>
+        <p class="edit-info">Writer: <%= blog.Writer_name %></p>
+
+        <form method="POST" action="/blogs/<%= blog.id %>?_method=PATCH">
+            <textarea rows="8" name="content"><%= blog.content %></textarea>
+            <button type="submit">Update Blog</button>
+        </form>
+    </div>
+
+</body>
+</html>
